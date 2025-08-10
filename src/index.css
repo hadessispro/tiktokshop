@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-[#f6f6f8] text-gray-900; }
+.toggle { width: 40px; height: 22px; border-radius: 9999px; appearance: none; background: #e5e7eb; position: relative; }
+.toggle:checked { background: #4b58e6; }
+.toggle::after { content: ""; width: 18px; height: 18px; background: #fff; border-radius: 9999px; position: absolute; top: 2px; left: 2px; transition: all .2s; }
+.toggle:checked::after { left: 20px; }
